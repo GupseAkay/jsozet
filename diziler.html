@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+// köşeli parantez veya new Array kullanılır
+// numarayla ulaşılabilir mesela modelde belirttim
+var marka = ["zara","bershka","hm","koton"]
+var model = new Array ("elbise","etek","pantolon","çamaşır","şort");
+console.log(marka);
+console.log(model[0]);
+
+// değiştirmek için
+
+model[0]="eldiven";
+console.log(model);
+
+for(var i=0; i<marka.length;i++){
+    console.log(marka[i]);
+}
+
+//arama yapmak
+
+if(marka.indexOf('pullandbear')!==-1){
+    console.log("bulundu");
+} else{
+    console.log("aranılan kelime bulunamadı");
+}
+
+
+
+    </script>
+    
+</body>

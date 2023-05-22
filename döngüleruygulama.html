@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+// 1) 10-100 arasındaki sayıları for ile yazdırın.
+
+// 2) 10-100 arasındaki sayıları 5'er 5'er yazdırın (while ile)
+
+// 3) Login kontrolü: kullanıcı adı ve parola kontrolünden geçene kadar kullanıcı bilgilerini kullanıcıdan isteyin
+
+// var k_username = "guest";
+// var l_password = "12345";
+
+
+/* BİRİNCİ UYGULAMA
+
+for (var i=10; i<=100; i++){
+    console.log(i);
+}
+*/
+
+/* İKİNCİ UYGULAMA
+
+var i=10; 
+while (i<=100) {
+    console.log(i);
+    i=i+5;
+}
+*/
+
+// ÜÇÜNCÜ UYGULAMA
+
+var k_username = "guest";
+var k_password = "12345";
+var loggedin = false;
+
+while (!loggedin){
+
+var username=prompt("Kullanıcı adı : ");
+var password=prompt("Parola : ");
+
+if((k_username=username) && (k_password==password)){
+    console.log("giriş yapıldı.");
+    loggedin=true;
+}else{
+    console.log("hatalı kullanıcı adı veya parola");
+}
+}
+
+
+</script>
+
+</body>
